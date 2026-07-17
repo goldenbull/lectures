@@ -1,0 +1,36 @@
+:root {
+  --slidev-theme-primary: #2563eb;
+}
+.slidev-layout {
+  font-size: 1.12rem;
+}
+.slidev-layout h1 {
+  letter-spacing: -0.02em;
+}
+.slidev-layout table {
+  width: 100%;
+}
+.card {
+  border: 1px solid rgba(100, 116, 139, 0.35);
+  border-radius: 0.85rem;
+  padding: 1.15rem 1.25rem;
+  background: rgba(148, 163, 184, 0.08);
+  line-height: 1.8;
+}
+.callout {
+  border-left: 4px solid #2563eb;
+  background: rgba(37, 99, 235, 0.08);
+  padding: 0.85rem 1.1rem;
+  border-radius: 0.25rem 0.65rem 0.65rem 0.25rem;
+}
+.warning {
+  border-left: 4px solid #f59e0b;
+  background: rgba(245, 158, 11, 0.10);
+  padding: 0.75rem 1rem;
+  border-radius: 0.25rem 0.65rem 0.65rem 0.25rem;
+  font-size: 0.9rem;
+}
+
+.slidev-layout :is(p, ul, ol, table, pre) + h1 {
+  margin-top: 3rem;
+}

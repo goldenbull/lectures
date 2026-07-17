@@ -1,5 +1,5 @@
 ---
-theme: default
+theme: seriph
 title: 量化投资与 AI
 info: |
   技术、产业与未来
@@ -13,59 +13,35 @@ mdc: true
 aspectRatio: 16/9
 ---
 
-# 量化投资与 AI
-
-## 技术、产业与未来
+# 量化投资与AI
 
 <div class="mt-12 opacity-70">
-讲者姓名 · 机构名称 · 2026
+陈金牛 · 2026
 </div>
 
 <!--
-开场建议：这不是一场“荐股课”，也不是一场单纯介绍 AI 工具的课。
-我们试图回答三个问题：量化投资如何运转？AI 正在改变什么？普通人的机会在哪里？
+听众摸底小调研
+
+1. 是否用过AI做研究、写报告、写程序
+2. 是否用过国外的AI（gemini，chatgpt，claude）
+3. 是否炒股
+4. 是否用AI辅助炒股
+
+根据听众对AI掌握的情况，按需现场展示一下AI的能力
 -->
 
 ---
 layout: center
-class: text-center
 ---
 
-# 三个问题
+# 目录
 
-<div class="grid grid-cols-3 gap-8 mt-12 text-left">
-  <div class="card"><b>量化是什么？</b><br><span>它如何把信息变成交易？</span></div>
-  <div class="card"><b>AI 改变什么？</b><br><span>效率、岗位，还是竞争规则？</span></div>
-  <div class="card"><b>机会在哪里？</b><br><span>模型之外还有哪些壁垒？</span></div>
-</div>
+<v-clicks>
 
----
-layout: section
----
+- 什么是量化投资
+- 对 AI 的一些思考
 
-# 先认识一下现场
-
----
-
-# 听众小调研
-
-请举手，或者现场扫码投票：
-
-<div class="grid grid-cols-2 gap-x-12 gap-y-4 mt-8">
-
-- 用 AI 做过研究或写报告？
-- 用过 ChatGPT、Claude 等国外模型？
-- 用 AI 写过程序？
-- 炒过 A 股？
-- 用 AI 辅助过投资？
-
-</div>
-
-<div class="mt-10 callout">
-根据现场情况，可插入 5–10 分钟演示：资料整理、数据分析、代码生成，或一份“AI 研报”的现场审查。
-</div>
-
-<!-- 演示时重点展示：AI 的速度、可迭代性，以及它会自信犯错。 -->
+</v-clicks>
 
 ---
 layout: section
@@ -73,88 +49,92 @@ layout: section
 
 # 第一部分
 
-## 量化投资是什么
+## 什么是量化投资
 
 ---
 
-# 从“看数字”到“自动决策”
+# 广义上说，一切投资都是量化投资
 
-量化投资不是简单地“用电脑炒股”，而是把投资过程尽量表达为可计算、可检验、可执行的规则。
+<v-clicks depth="1">
 
-```mermaid
-flowchart LR
-  A[数据] --> B[信号]
-  B --> C[组合]
-  C --> D[风控]
-  D --> E[交易]
-  E --> F[复盘]
-  F --> B
-```
+- 所有人都要依赖数字和消息炒股
 
-<div class="mt-8 callout">
-核心差别不在于“有没有数字”，而在于自动化程度，以及人在决策链条中保留多少干预权。
+# 特指：高度依赖IT技术，通过程序自动交易
+
+- 高度自动化，尽量少的人工干预
+
+# 区别：自动化程度，人工干预的方式
+
+</v-clicks>
+
+<v-clicks>
+
+- 没有截然分明的边界
+- 盘中程序给出实时提示，交易员决定是否交易
+- 收盘后程序选股，第二天手工交易
+- 极端行情发生时，手工拉闸断电
+
+</v-clicks>
+
+---
+
+# 量化机构的如何分工
+
+<div class="grid grid-cols-3 gap-6 mt-8 mb-8">
+  <div v-click class="card"><b>投研</b><br>策略研发<br>组合管理<br>风控<br><i>探索未知，“战争迷雾”</i></div>
+  <div v-click class="card"><b>IT</b><br>数据系统<br>回测系统<br>交易系统<br><i>画图纸，盖大楼</i></div>
+  <div v-click class="card"><b>业务支持</b><br>市场<br>法务<br>行政、财务、人事</div>
 </div>
-
----
-
-# 广义与狭义的量化
-
-| | 广义量化 | 狭义量化 |
-|---|---|---|
-| 信息 | 数据、财报、新闻、图表 | 结构化数据与可计算信号 |
-| 决策 | 人主导，模型辅助 | 模型主导，人工设定边界 |
-| 执行 | 人工或半自动 | 高度自动化 |
-| 优势 | 灵活、能处理非常规情境 | 纪律性、可扩展、可回测 |
-| 风险 | 情绪与认知偏差 | 模型失效与系统性错误 |
-
-<div class="mt-6 text-sm opacity-70">现实中的机构通常位于两者之间，而不是非黑即白。</div>
-
----
-
-# 一家量化机构如何分工
-
-<div class="grid grid-cols-3 gap-6 mt-8">
-  <div class="card"><b>投研</b><br>策略研发<br>组合管理<br>风险管理</div>
-  <div class="card"><b>工程与数据</b><br>数据平台<br>交易系统<br>运营维护</div>
-  <div class="card"><b>业务支持</b><br>市场与产品<br>合规与法务<br>行政、财务、人事</div>
-</div>
-
-<div class="mt-10 callout">真正的策略收益，往往是研究、数据、工程和交易执行共同生产出来的。</div>
 
 ---
 
 # 市场、频率与收益来源
 
-<div class="grid grid-cols-3 gap-6 mt-8">
-  <div class="card"><b>交易什么</b><br>股票、债券<br>期货、期权<br>外汇与其他资产</div>
-  <div class="card"><b>持有多久</b><br>中低频<br>中高频<br>高频交易</div>
-  <div class="card"><b>赚什么钱</b><br>趋势<br>相对价值与套利<br>流动性与风险溢价</div>
+<div class="grid grid-cols-3 gap-6 mt-8 mb-8">
+  <div v-click class="card"><b>交易标的</b><br>股票、债券<br>期货、期权<br>外汇等其他资产</div>
+  <div v-click class="card"><b>交易频率</b><br>中低频：周、月、季度<br>中高频：天<br>高频交易：分钟，秒，纳秒</div>
+  <div v-click class="card"><b>赚什么钱</b><br>投机：趋势跟踪，追涨杀跌<br>套利：趋势回归</div>
 </div>
 
-<!-- 可强调：频率越高，对延迟、成本、容量和基础设施的要求通常越高。 -->
+<v-click>
+
+- 频率越高，对延迟、手续费成本、市场容量和基础设施的要求越高
+
+</v-click>
 
 ---
 
-# 常见量化产品（一）
+# 一个 Demo：量化投资视角下的 MACD
 
-| 类型 | 核心思路 | 主要挑战 |
-|---|---|---|
-| 多因子选股 | 用价值、质量、动量等特征解释收益差异 | 因子拥挤、风格切换 |
-| 指数增强 | 控制相对基准风险，争取稳定超额收益 | 跟踪误差与交易成本 |
-| 统计套利 | 捕捉资产间短期偏离与均值回归 | 关系突变、容量有限 |
-| 事件驱动 | 围绕公告、重组、业绩等事件交易 | 事件识别与因果混淆 |
+<v-clicks>
+
+- 听说 MACD 金叉死叉信号很有效
+- 取出2000年以来的全部股票的5分钟线，做复权处理
+- 剔除停牌的和交易不活跃的股票
+- 按照某个参数组合计算活跃股票的金叉死叉信号
+- 剔除涨停和跌停无法交易的情况
+- 按照某种权重分配方式给产生信号的股票分配资金
+- 观察参数组合的表现，选一个表现好的参数组合
+- 逐月滚动，测试选中的参数组合在下个月的盈亏情况
+- 得到结论：如果这么做，过去20年收益情况如何
+- 小资金开始实盘验证
+- 如果实盘验证结果和历史回测吻合，说明策略有效，可以分配更多资金
+
+</v-clicks>
 
 ---
 
-# 常见量化产品（二）
+# 常见量化产品
 
-| 类型 | 核心思路 | 主要挑战 |
-|---|---|---|
-| CTA / 管理期货 | 跨期货品种捕捉趋势或风险溢价 | 震荡期回撤、参数稳定性 |
-| 高频交易 | 从极短期价格与订单流中提取微弱信号 | 延迟、成本、基础设施 |
-| 做市策略 | 持续双边报价，赚取价差并管理库存 | 逆向选择、尾部风险 |
-
-<div class="mt-8 callout">策略名称只是标签。理解一项策略，要继续追问：收益从谁那里来？承担了什么风险？为什么尚未被竞争抹平？</div>
+| **类型** | **核心思路** |
+|---|---|
+| 多因子选股 | 用价值、质量、动量等特征解释收益差异 |
+| 指数增强 | 控制相对基准风险，争取稳定超额收益 |
+| 统计套利 | 捕捉资产间短期偏离与均值回归 |
+| 事件驱动 | 围绕公告、重组、业绩等事件交易 |
+| CTA | 交易原油、化工、农产品等大宗商品的期货合约 |
+| 高频交易 | 从极短期价格与订单流中提取微弱信号 |
+| 做市策略 | 持续双边报价，为市场提供流动性，赚取价差 |
 
 ---
 layout: center
@@ -826,37 +806,3 @@ layout: section
 - 根据听众背景，加入“个人投资者如何正确使用 AI”
 - 最后一页加入延伸阅读和全部数据来源
 
-<style>
-:root {
-  --slidev-theme-primary: #2563eb;
-}
-.slidev-layout {
-  font-size: 1.12rem;
-}
-.slidev-layout h1 {
-  letter-spacing: -0.02em;
-}
-.slidev-layout table {
-  width: 100%;
-}
-.card {
-  border: 1px solid rgba(100, 116, 139, 0.35);
-  border-radius: 0.85rem;
-  padding: 1.15rem 1.25rem;
-  background: rgba(148, 163, 184, 0.08);
-  line-height: 1.8;
-}
-.callout {
-  border-left: 4px solid #2563eb;
-  background: rgba(37, 99, 235, 0.08);
-  padding: 0.85rem 1.1rem;
-  border-radius: 0.25rem 0.65rem 0.65rem 0.25rem;
-}
-.warning {
-  border-left: 4px solid #f59e0b;
-  background: rgba(245, 158, 11, 0.10);
-  padding: 0.75rem 1rem;
-  border-radius: 0.25rem 0.65rem 0.65rem 0.25rem;
-  font-size: 0.9rem;
-}
-</style>
