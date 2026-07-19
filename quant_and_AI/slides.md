@@ -75,9 +75,9 @@ layout: section
 # 量化机构的如何分工
 
 <div class="grid grid-cols-3 gap-6 mt-8 mb-8">
-  <div v-click class="card"><b>投研</b><br>策略研发<br>组合管理<br>风控<br><i>探索未知，“战争迷雾”</i></div>
-  <div v-click class="card"><b>IT</b><br>数据系统<br>回测系统<br>交易系统<br><i>画图纸，盖大楼</i></div>
-  <div v-click class="card"><b>业务支持</b><br>市场<br>法务<br>行政、财务、人事</div>
+  <Card v-click title="投研">策略研发<br>组合管理<br>风控<br><i>探索未知，“战争迷雾”</i></Card>
+  <Card v-click title="IT">数据系统<br>回测系统<br>交易系统<br><i>画图纸，盖大楼</i></Card>
+  <Card v-click title="业务支持">市场<br>法务<br>行政、财务、人事</Card>
 </div>
 
 ---
@@ -85,9 +85,9 @@ layout: section
 # 市场、频率与收益来源
 
 <div class="grid grid-cols-3 gap-6 mt-8 mb-8">
-  <div v-click class="card"><b>交易标的</b><br>股票、债券<br>期货、期权<br>外汇等其他资产</div>
-  <div v-click class="card"><b>交易频率</b><br>中低频：周、月、季度<br>中高频：天<br>高频交易：分钟，秒，纳秒</div>
-  <div v-click class="card"><b>赚什么钱</b><br>投机：趋势跟踪，追涨杀跌<br>套利：趋势回归</div>
+  <Card v-click title="交易标的">票、债券<br>期货、期权<br>外汇等其他资产</Card>
+  <Card v-click title="交易频率">中低频：周、月、季度<br>中高频：天<br>高频交易：分钟，秒，纳秒</Card>
+  <Card v-click title="赚什么钱">投机：趋势跟踪，追涨杀跌<br>套利：趋势回归</Card>
 </div>
 
 <v-click>
@@ -152,10 +152,10 @@ layout: section
 # 数据即信息，和大模型的原理相仿
 
 <div class="grid grid-cols-2 gap-6 mt-12">
-  <div v-click class="card"><b>市场公开数据</b><br>行情、公司公告、财务数据</div>
-  <div v-click class="card"><b>卖方与预期数据</b><br>卖方研报、一致预期、评级</div>
-  <div v-click class="card"><b>舆情数据</b><br>新闻、股吧、微博、社交媒体</div>
-  <div v-click class="card"><b>另类数据</b><br>卫星、物流、招聘、门店、供应链等</div>
+  <Card v-click title="市场公开数据">行情、公司公告、财务数据</Card>
+  <Card v-click title="卖方与预期数据">卖方研报、一致预期、评级</Card>
+  <Card v-click title="舆情数据">新闻、股吧、微博、社交媒体</Card>
+  <Card v-click title="另类数据">卫星、物流、招聘、门店、供应链等</Card>
 </div>
 
 ---
@@ -182,8 +182,8 @@ layout: section
 </div>
 
 <div class="grid grid-cols-2 gap-10 mt-10">
-  <div v-click class="card"><b>高同质化</b><br>容易获得、格式统一、竞争拥挤<br><span class="opacity-60">信息增量往往较低</span></div>
-  <div v-click class="card"><b>低同质化</b><br>采集困难、处理复杂、覆盖独特<br><span class="opacity-60">可能具有更高信息密度</span></div>
+  <Card v-click title="高同质化">容易获得、格式统一、竞争拥挤<br>信息增量往往较低</Card>
+  <Card v-click title="低同质化">采集困难、处理复杂、覆盖独特<br>可能具有更高信息密度</Card>
 </div>
 
 ---
@@ -252,20 +252,18 @@ layout: section
 </v-clicks>
 
 <div class="grid grid-cols-2 gap-10 mt-10">
-  <div v-click class="card">
-    <b>盘中的挑战</b>
+  <Card v-click title="盘中的挑战">
     <ul>
       <li>收到行情后，要在几个毫秒内完成策略计算并下单</li>
       <li>核心需求：低延迟</li>
     </ul>
-  </div>
-  <div v-click class="card">
-    <b>盘后的挑战</b>
+  </Card>
+  <Card v-click title="盘后的挑战">
     <ul>
       <li>多个策略，多组参数，在多台服务器上同时访问和计算全市场全历史的数据</li>
       <li>核心需求：高并发</li>
     </ul>
-  </div>
+  </Card>
 </div>
 
 ---
@@ -299,9 +297,9 @@ layout: section
 # 早期：从理论模型到产业
 
 <div class="grid grid-cols-2 gap-6 mt-8">
-  <div v-click class="card"><b>资产定价</b><br>CAPM：收益与系统性风险</div>
-  <div v-click class="card"><b>衍生品定价</b><br>Black–Scholes：复制与无套利</div>
-  <div v-click class="card"><b>风险模型</b><br>BARRA：多因子分解组合风险</div>
+  <Card v-click title="资产定价">CAPM：收益与系统性风险</Card>
+  <Card v-click title="衍生品定价">Black–Scholes：复制与无套利</Card>
+  <Card v-click title="风险模型">BARRA：多因子分解组合风险</Card>
 </div>
 
 <div v-click class="mt-10 callout">量化投资的发展，是金融理论、计算能力、数据供给和市场制度共同演化的结果。</div>
@@ -392,64 +390,150 @@ layout: section
 
 # 2015 年股灾之后，A 股量化开始大爆发
 
-<div v-click>
+<v-clicks>
 
-```mermaid
-timeline
-  title 从经验图表到系统化交易
-  早期 : 手画 K 线 : 技术分析
-  市场扩容 : 数据与软件普及
-  股指期货后 : 对冲工具增加 : 私募量化发展
-  近年 : 百亿级机构 : AI 与算力基础设施
-```
+- 伊世顿事件，两名俄罗斯程序员勾结期货公司内部人员，三年时间用680万本金挣了20多亿，股灾期间大发横财，经媒体报道后，迅速引起社会关注
+- 大批理工科背景的在校学生和从业人员开始注意到量化投资行业，特别是 IT 和物理、数学相关专业
+- AI 技术迅速发展，2016 年 AlphaGo 战胜人类
+- 大批量化私募雨后春笋般兴起
 
-</div>
+</v-clicks>
 
-<!-- 可展开“幻方与 DeepSeek”：重点不是个别公司传奇，而是量化机构积累的算力、人才和工程能力如何外溢。 -->
+---
+layout: center
+---
 
+# 几个代表性的头部私募
+
+|  |    成立时间 |     目前管理规模 |
+| ---- | ------: | ---------: |
+| 幻方 | 2015年 | 800亿～900亿元 |
+| 九坤 | 2012年 | 800亿～900亿元 |
+| 明汯 | 2014年 | 800亿～900亿元 |
+| 衍复 | 2019年 | 800亿～900亿元 |
+| 灵均 | 2014年 | 600亿～700亿元 |
+
+---
+layout: default
 ---
 
 # 高速发展中的争议
 
-<div class="grid grid-cols-3 gap-6 mt-8">
-  <div v-click class="card"><b>支持者</b><br>提高流动性<br>促进价格发现<br>减少主观情绪</div>
-  <div v-click class="card"><b>质疑者</b><br>交易公平性<br>波动与拥挤<br>“收割散户”观感</div>
-  <div v-click class="card"><b>监管者</b><br>程序化交易报告<br>异常交易监测<br>系统安全与公平</div>
+<div class="flex justify-center">
+  <Card v-click title="事实">量化私募相对散户和公募基金有巨大的技术优势<br>量化私募盈利能力很强</Card>
 </div>
 
-<div v-click class="mt-8 callout">讨论量化，必须区分策略类型、频率和市场环境；“量化”不是一个单一行为主体。</div>
+<div class="grid grid-cols-3 gap-6 mt-8">
+  <Card v-click title="支持者">提高流动性<br>促进价格发现<br>减少主观情绪</Card>
+  <Card v-click title="反对者">交易不公平，收割散户<br>策略趋同引发踩踏</Card>
+  <Card v-click title="监管者">程序化报备<br>异常交易监测<br>打击高频交易</Card>
+</div>
+
+---
+layout: section
+---
+
+# 以史为鉴
+
+## 量化机构是如何倒闭的
 
 ---
 
-# 案例一：LTCM
+# 长期资本管理公司，Long-Term Capital Management
 
 <v-clicks>
 
-- 团队拥有顶尖理论与市场经验，策略依赖价差最终收敛
-- 俄罗斯债务危机后，相关性、流动性和融资条件同时恶化
-- 高杠杆把暂时的价格偏离变成无法等待的生存危机
+- 1994 年 LTCM 成立，金光闪闪的全明星队
+  - 迈伦·斯科尔斯：Black–Scholes 期权定价模型提出者之一，1997 年诺贝尔经济学奖得主
+  - 罗伯特·默顿：现代期权定价理论的重要奠基人，同获 1997 年诺贝尔经济学奖
+  - 戴维·马林斯：美联储前副主席
+  - 多位来自哈佛、MIT等名校的数学家、经济学家和博士
+  - 一批曾在所罗门兄弟从事债券套利的明星交易员
+- 初期业绩辉煌
+  - 成立时便募集约 12.5 亿美元
+  - 高峰时，它以约 40 多亿美元自有资本控制超过 1000 亿美元资产，衍生品名义规模达到万亿美元级别
+  - LTCM 早期业绩极为出色，1995 年和 1996 年的年度回报都超过 40%
 
 </v-clicks>
 
-<div v-click class="mt-8 callout"><b>教训：</b>模型可能长期正确，但机构会在“正确兑现之前”先失去资金与流动性。</div>
+---
+
+# LTCM 是如何破产的
+
+<div class="grid grid-cols-[1fr_18rem] gap-4">
+
+  <div v-click="2">
+
+  <v-clicks>
+
+  ## 流动性溢价和风险溢价
+
+  - 流动性溢价：流动性差的东西卖的便宜
+  - 风险溢价：违约概率高的债券，利息率更高，价格低
+  - 简单的例子：公司债便宜，国债贵
+  - LTCM 的盈利模式：买入公司债，卖空国债，等待价差收敛
+
+  ## 黑天鹅事件
+
+  - 1998年8月，受亚洲金融危机的冲击，俄罗斯政府宣布国债违约
+  - 全球投资者陷入恐慌，交易行为发生大反转
+    - 抢购高流动性、低风险的资产 → 贵的更贵
+    - 抛售新兴市场债券等低流动性、高风险的资产 → 便宜的更便宜
+  - LTCM 的持仓产生严重亏损，资金杠杆更是扩大了亏损，破产倒闭
+
+  </v-clicks>
+
+  </div>
+
+  <div>
+    <Card v-click="1" class="self-start text-sm">
+      <table>
+        <thead>
+          <tr><th></th><th>公司债</th><th>国债</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>利率</td><td>高</td><td>低</td></tr>
+          <tr><td>违约风险</td><td>高</td><td>低</td></tr>
+          <tr><td>流动性</td><td>差</td><td>好</td></tr>
+          <tr><td>价格</td><td>便宜</td><td>贵</td></tr>
+        </tbody>
+      </table>
+    </Card>
+    <div v-click class="callout mt-4">春天终会到来<br>重要的是如何在寒冬中活下来</div>
+  </div>
+</div>
+
 
 ---
 
-# 案例二：次贷危机中的模型
+# 次贷危机
 
 <v-clicks>
 
-- 历史样本低估了全国性房价下跌与违约相关性
-- 复杂结构让风险在层层包装中变得不透明
-- 评级、融资、抵押品价格形成相互强化的反馈
+## CDO（Collateralized Debt Obligation，债务担保证券）
 
 </v-clicks>
 
-<div v-click class="mt-8 callout"><b>教训：</b>风险不是一个静态数字。危机中，相关性、流动性和人的行为都会改变。</div>
+<v-clicks>
+
+- CDO 把大量住房抵押贷款放在一起，再按照偿付顺序切成不同层级分别出售
+  - 优先级：最先获得还款，通常评级为AAA，低风险，低收益
+  - 劣后级：最先承担贷款违约造成的损失，高风险，高收益
+  - 即使部分房贷违约，损失也会首先被低等级层吸收，不会轻易传递到AAA层。
+- 模型的核心假设：
+  - 房价不会在全国范围内同时大幅下跌
+  - 不同地区借款人的违约概率是**独立同分布**
+  - 历史违约率可以代表未来
+  - 房屋出售后仍能收回相当比例的贷款
+- 当房价下跌时，以上所有假设同时被打脸
+
+</v-clicks>
+
+<div v-click class="mt-2 callout">模型不能只追求数学上的理性、完美，而无视真实世界的逻辑</div>
 
 ---
 
-# 案例三：骑士资本
+# 骑士资本
 
 <v-clicks>
 
@@ -463,7 +547,7 @@ timeline
 
 ---
 
-# 中国市场的三个提醒
+# 中国市场的提醒（一）：光大证券“乌龙指”
 
 <table>
   <thead>
@@ -479,15 +563,26 @@ timeline
       <td>程序异常与巨额订单</td>
       <td>系统控制、信息披露与市场冲击</td>
     </tr>
+  </tbody>
+</table>
+
+---
+
+# 中国市场的提醒（二）：中行“原油宝”
+
+<table>
+  <thead>
+    <tr>
+      <th>案例</th>
+      <th>表面问题</th>
+      <th>更深层问题</th>
+    </tr>
+  </thead>
+  <tbody>
     <tr v-click>
       <td>中行“原油宝”</td>
       <td>极端行情下穿仓</td>
       <td>产品设计、适当性与尾部风险</td>
-    </tr>
-    <tr v-click>
-      <td>市场异常价格</td>
-      <td>单点数据剧烈偏离</td>
-      <td>如何区分坏数据与真实风险</td>
     </tr>
   </tbody>
 </table>
@@ -546,8 +641,8 @@ layout: section
 # AI 在系统开发中的应用
 
 <div class="grid grid-cols-2 gap-8 mt-8">
-  <div v-click class="card"><b>开发阶段</b><br>代码生成与重构<br>接口与测试用例<br>文档和迁移脚本</div>
-  <div v-click class="card"><b>运行阶段</b><br>日志归因<br>异常检测<br>运维知识检索</div>
+  <Card v-click title="开发阶段">代码生成与重构<br>接口与测试用例<br>文档和迁移脚本</Card>
+  <Card v-click title="运行阶段">日志归因<br>异常检测<br>运维知识检索</Card>
 </div>
 
 <div v-click class="mt-8 text-sm opacity-70">金融系统仍需要代码审查、隔离环境、权限控制、回放测试与人工批准。</div>
@@ -637,8 +732,8 @@ flowchart LR
 # 组织方式也会变化
 
 <div class="grid grid-cols-2 gap-8 mt-8">
-  <div v-click class="card"><b>团队</b><br>研究团队小型化<br>投研、技术、数据进一步融合</div>
-  <div v-click class="card"><b>公司</b><br>高级人才杠杆增强<br>分配机制重新调整<br>AI 基础设施成为竞争要素</div>
+  <Card v-click title="团队">研究团队小型化<br>投研、技术、数据进一步融合</Card>
+  <Card v-click title="公司">高级人才杠杆增强<br>分配机制重新调整<br>AI 基础设施成为竞争要素</Card>
 </div>
 
 ---
@@ -773,10 +868,10 @@ flowchart TB
 # 美国：几个值得追踪的指标
 
 <div class="grid grid-cols-2 gap-6 mt-6">
-  <div v-click class="card"><b>宏观投资</b><br>数据中心、软件和设备投资对总投资增量的贡献</div>
-  <div v-click class="card"><b>经济增长</b><br>AI 相关资本形成对 GDP 增量的贡献</div>
-  <div v-click class="card"><b>市场集中</b><br>头部科技公司占美股总市值的比例</div>
-  <div v-click class="card"><b>盈利兑现</b><br>AI 资本开支最终转化为收入和利润的速度</div>
+  <Card v-click title="宏观投资">数据中心、软件和设备投资对总投资增量的贡献</Card>
+  <Card v-click title="经济增长">AI 相关资本形成对 GDP 增量的贡献</Card>
+  <Card v-click title="市场集中">头部科技公司占美股总市值的比例</Card>
+  <Card v-click title="盈利兑现">AI 资本开支最终转化为收入和利润的速度</Card>
 </div>
 
 <div v-click class="mt-6 warning">演讲前复核原提纲数字：116%、21%、31%、58%。需统一统计区间、AI 投资口径及“七姐妹”定义，并补充来源。</div>
@@ -930,9 +1025,9 @@ layout: section
 <div v-click>不是所有任务都需要最顶级、最昂贵的通用模型。</div>
 
 <div class="grid grid-cols-3 gap-6 mt-8">
-  <div v-click class="card"><b>小模型</b><br>成本低、延迟低<br>适合明确任务</div>
-  <div v-click class="card"><b>专用模型</b><br>结合行业数据<br>强化专业能力</div>
-  <div v-click class="card"><b>端侧模型</b><br>隐私、离线<br>贴近设备与现场</div>
+  <Card v-click title="小模型">成本低、延迟低<br>适合明确任务</Card>
+  <Card v-click title="专用模型">结合行业数据<br>强化专业能力</Card>
+  <Card v-click title="端侧模型">隐私、离线<br>贴近设备与现场</Card>
 </div>
 
 ---
