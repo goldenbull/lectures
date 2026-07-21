@@ -9,3 +9,18 @@ To start the slide show:
 Edit the [slides.md](./slides.md) to see the changes.
 
 Learn more about Slidev at the [documentation](https://sli.dev/).
+
+# deployment
+
+`pnpm exec slidev build --base /quant-ai/ --without-notes`
+
+caddy config:
+
+```
+        redir /quant-ai /quant-ai/
+        handle_path /quant-ai/* {
+                root * /var/www/lecture
+                try_files {path} /index.html
+                file_server
+        }
+```
